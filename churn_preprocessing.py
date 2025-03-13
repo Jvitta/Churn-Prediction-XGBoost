@@ -76,7 +76,7 @@ def analyze_feature_importance(X, y):
             n_estimators=100
         ),
         step=5,
-        cv=3,
+        cv=10,
         scoring='accuracy',
         n_jobs=-1,
         min_features_to_select=10
