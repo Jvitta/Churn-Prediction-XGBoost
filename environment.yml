@@ -1,0 +1,16 @@
+name: churn_analysis
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - numpy
+  - seaborn
+  - matplotlib
+  - scikit-learn
+  - xgboost
+  # Add any pip-only packages here
+  # - pip
+  # - pip:
+  #   - some-pip-only-package
