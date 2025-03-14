@@ -33,6 +33,8 @@ def load_and_prepare_data(filepath='churn_clean.csv'):
     # Select only the features we want
     df_selected = df[selected_features]
     
+    df_selected.to_csv('cleaned_churn_dataset.csv', index=False)
+    
     return df_selected
 
 def train_model_with_informed_search():
@@ -52,6 +54,13 @@ def train_model_with_informed_search():
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
+    # Save training and test sets to CSV files
+    print("Saving train and test sets to CSV...")
+    train_data = pd.concat([X_train, y_train], axis=1)
+    test_data = pd.concat([X_test, y_test], axis=1)
+    
+    train_data.to_csv('train_set.csv', index=False)
+    test_data.to_csv('test_set.csv', index=False)
     
     # STAGE 1: Broad search with more iterations
     print("\n=== STAGE 1: Broad Parameter Search ===")
