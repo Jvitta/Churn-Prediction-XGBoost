@@ -153,12 +153,12 @@ def train_model_with_informed_search():
     refined_search = RandomizedSearchCV(
         estimator=base_model,
         param_distributions=refined_param_dist,
-        n_iter=500,
+        n_iter=300,
         scoring=['f1', 'roc_auc', 'precision', 'recall'],
         refit='f1',
         n_jobs=-1,
         cv=5,
-        verbose=0,  # Changed from 2 to 0 to remove CV output
+        verbose=0,  
         random_state=42,
         return_train_score=True
     )
