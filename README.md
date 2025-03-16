@@ -111,11 +111,5 @@ Each implementation provides:
 - PR AUC score
 - Feature importance rankings
 
-## Contributing
-This project is part of a WGU course assignment. While it's not open for direct contributions, feel free to fork the repository and adapt it for your own use.
-
-## License
-This project is created for educational purposes as part of WGU coursework.
-
 ## Author
-Created by Jack Vittimberga for WGU D603 course.
+Created by Jack Vittimberga.
