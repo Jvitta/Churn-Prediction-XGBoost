@@ -66,12 +66,6 @@ Run the informed search implementation:
 python churn_classification.py
 ```
 
-#### Genetic Algorithm Model
-Run the genetic algorithm implementation:
-```bash
-python churn_classification_genetic.py
-```
-
 ## Model Implementations
 
 ### 1. Baseline Model
@@ -84,11 +78,6 @@ python churn_classification_genetic.py
 - Stage 1: Broad parameter search
 - Stage 2: Refined search around promising parameters
 - Uses RandomizedSearchCV with multiple scoring metrics
-
-### 3. Genetic Algorithm Model
-- Uses evolutionary algorithms for hyperparameter optimization
-- Implements natural selection-inspired parameter tuning
-- Provides visualization of the evolution process
 
 ## Output Files
 
@@ -107,7 +96,6 @@ Each model implementation generates:
 - xgboost
 - seaborn
 - matplotlib
-- deap (for genetic algorithm)
 
 ## Results
 The project generates various visualization files:
@@ -115,7 +103,6 @@ The project generates various visualization files:
 - `feature_importance_*.png`: Feature importance plots
 - `mutual_information.png`: Mutual information scores
 - `correlation_heatmap_with_categories.png`: Feature correlation analysis
-- `genetic_evolution.png`: Evolution of genetic algorithm performance
 
 ## Model Comparison
 Each implementation provides:
@@ -131,4 +118,4 @@ This project is part of a WGU course assignment. While it's not open for direct 
 This project is created for educational purposes as part of WGU coursework.
 
 ## Author
-Created by [Your Name] for WGU D603 course.
+Created by Jack Vittimberga for WGU D603 course.
